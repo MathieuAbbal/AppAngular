@@ -1,0 +1,77 @@
+.search{
+  display:flex;
+  justify-content:center;
+  margin:10px;
+}
+.number{
+  width:60px;
+}
+/*.card{
+  border: 1px solid black;
+
+}*/
+h1{
+  text-align:center;
+}
+input{
+  margin:5px;
+}
+.container{
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+
+img{
+  height: 379px;
+  width: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+}
+.card{
+  margin:20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+
+}
+.name{
+  text-align:center;
+}
+.btn {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+
+  font-weight: 400;
+
+
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+
+}
