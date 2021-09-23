@@ -10,7 +10,7 @@ export class PhotoComponent {
   search: String = '';
   per_page: Number= 1;
   data: any;
-  loading: boolean = false;
+
 
   constructor(private pexelService: PexelPhotoService) {
     this.pexelService.getData(this.search, this.per_page);
@@ -22,7 +22,7 @@ export class PhotoComponent {
       (data) => {
         console.log(data);
         this.data = data.photos;
-        this.loading = false;
+
       },
       (error) => {
         console.log(error);
@@ -30,7 +30,7 @@ export class PhotoComponent {
     );
   }
   ngOnInit() {
-    this.loading = true;
+
  }
 
 }
