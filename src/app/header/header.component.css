@@ -1,0 +1,17 @@
+.header{
+  display:flex;
+
+  color:white;
+  background-color: #232a34;
+  padding:20px;
+  margin:0px;
+}
+
+a{
+  margin:5px;
+  text-decoration:none;
+  color:white;
+}
+a:hover{
+  color:#2EE59D;
+}

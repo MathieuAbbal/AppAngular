@@ -12,6 +12,8 @@ import { PhotoComponent } from './photo/photo.component';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { MessageComponent } from './message/message.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HomeComponent,
     PhotoComponent,
+    HeaderComponent,
+    MessageComponent,
 
 
 

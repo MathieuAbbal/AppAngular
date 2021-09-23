@@ -1,16 +1,109 @@
-<h1>Bienvenue sur l'app de mathieu</h1>
+<div class="container">
+  <h1>Bienvenue sur l'app de mathieu <img
+      src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width=50px></h1>
 
-<p>Le but de ce projet est de me familiariser avec le framework frontend javascript Angular.<br>
-  Le projet consiste à créer un formulaire et d'afficher de manière dynamique des photographie en fonction d'un mot clé.
-</p>
-<h2>Spécification:</h2>
-<ul>
-  <li>Application créer avec Angular 12.2.6 </li>
-  <li>Utilisation du router Link, création de composants, création de servives</li>
-  <li>Utilisation de l'api Pexels </li>
-</ul>
-<h2>Fonctionnalités implémentées:</h2>
-<ul>
-  <li>Recherche de photo en fonction d'un mot clé</li>
-  <li>Choix du nombre de photo à afficher</li>
-</ul>
+  <p>Le but de ce projet est de me familiariser avec le framework frontend javascript Angular.
+  </p>
+  <h2>Spécifications:</h2>
+  <ul>
+    <li>Application créer avec Angular 12.2.6 </li>
+    <li>Utilisation du router Link, création de composants, création de services</li>
+    <li>Utilisation de l'api <a href="https://help.pexels.com/hc/en-us" target="blank">Pexels</a> </li>
+  </ul>
+  <h2>Fonctionnalités implémentées:</h2>
+  <ul>
+    <li>Recherche de photo en fonction d'un mot clé</li>
+    <li>Choix du nombre de photo à afficher</li>
+  </ul>
+
+</div>
+<div class="container">
+  <h2 class="section">Fonctionnement d'Angular</h2>
+</div>
+<div class="container">
+  <h3>L’architecture d’Angular</h3>
+  <p>L’ <b>architecture d’Angular</b> est simplement un arbre hiérarchique avec pour parents et enfants des
+    <b>components</b>.Ces components sont réutilisables et indépendants rendant le code Angular hautement testable.
+  </p>
+
+  <p>Angular est écrit en <b>TypeScript</b>. Il implémente des fonctionnalités de base et optionnelles sous la forme
+    d’un
+    ensemble de bibliothèques TypeScript que vous importez dans vos applications.</p>
+
+  <p>Chaque application Angular fonctionne grâce à au moins un component. C’est le <b>component racine</b> qui lie la
+    hiérarchie des components au DOM. Chaque component définit une classe qui contient les données et la logique de
+    l’application, et est associé à un <b>modèle HTML</b> qui définit une vue à afficher dans un environnement cible.
+  </p>
+
+  <p>Les autres éléments de l’architecture sont les <b>modules</b> et les <b>services</b>. Les modules, les services et
+    les components
+    sont des classes qui utilisent des decorators. Ces decorators fournissent des métadonnées qui indiquent à Angular
+    comment les utiliser.</p>
+  <p>Les métadonnées d’un component s’associe à un modèle pour définir une vue. Un modèle est l’association d’un code
+    HTML avec des <b>directives</b> et un <b>binding markup</b> permettant à Angular de modifier le HTML avant de
+    l’afficher.</p>
+
+  <p>Les <b>métadonnées</b> d’un service fournissent les informations dont Angular a besoin pour les mettre à la
+    disposition
+    des components par le biais de l’<b>injection de dépendances</b>.</p>
+
+  <p>Les components définissent généralement de nombreuses vues, disposées hiérarchiquement. Le service <b>Router</b>
+    vous aide
+    à définir les chemins de navigation entre les vues.</p>
+  <img src="../../assets/Architecture-Angular.png" alt="schéma fonctionnement angular " class="img" />
+</div>
+<div class="container">
+  <h3>QU’EST-CE QU’UN MODULE ?</h3>
+  <p>Un <b>module</b> d’Angular aussi appelé <b>NgModule</b>, est un groupe de components, de directives, de pipes et de
+    services qui
+    construisent ensemble une fonctionnalité. Chaque application Angular possède un module racine, appelé
+    <b>AppModule</b>, qui
+    permet de lancer l’application. Une application contient généralement de nombreux modules fonctionnels.
+  </p>
+  <p>Comme les modules JavaScript, les NgModules peuvent importer des fonctionnalités d’autres NgModules. Le fait de
+    pouvoir organiser votre code en séparant vos modules vous permet de les réutiliser dans d’autres applications et
+    ainsi gagner en productivité.</p>
+
+</div>
+<div class="container">
+  <h3>QU’EST-CE QU’UN COMPONENT ?</h3>
+  <p>Les <b>components</b> sont des blocs de codes affichant une fonctionnalité. Ils peuvent être réutilisés dans les
+    modules
+    et les applications. Un component dans Angular fonctionne grâce à un fichier de classe, d’un <b>modèle HTML</b> et
+    d’un
+    fichier css/scss</p>
+
+  <p>Les directives du component donnent la logique du programme, et le data binding connecte l’application au DOM. Il y
+    a deux types de <b>data binding</b> :</p>
+  <ul>
+    <li>L’<b>event binding</b> permet à votre application de répondre aux inputs des utilisateurs dans l’environnement
+      cible en
+      mettant à jour les données de votre application.</li>
+    <li>La <b>property binding</b> vous permet d’insérer des valeurs calculées à partir des données de votre application
+      dans
+      le
+      HTML.</li>
+  </ul>
+
+  <p>Avant l’affichage d’une vue, Angular évalue les directives et résout la syntaxe de liaison dans le modèle pour
+    modifier les éléments HTML et le DOM, en fonction des données et de la logique de votre programme.</p>
+
+  <p> Angular prend en charge la liaison bidirectionnelle des données, ce qui signifie que les modifications du DOM,
+    telles que les choix de l’utilisateur, sont également prises en compte dans vos données de programme.</p>
+
+  <p> Vos modèles peuvent utiliser des pipes pour améliorer l’expérience de l’utilisateur en personnalisant les valeurs
+    affichées. Angular fournit des pipes prédéfinies pour les transformations courantes.</p>
+  <img src="../../assets/Component-et-template-Angular.png" alt="schéma component et tamplate " class="img" />
+</div>
+<div class="container">
+  <h3>QU’EST CE QU’UN SERVICE ?</h3>
+  <p>Pour les données ou la logique qui ne sont pas associées à une vue spécifique et que vous souhaitez partager entre
+    les components, vous créez un service. Le service est immédiatement précédé par le decorator @Injectable(). Le
+    decorator fournit les <b>métadonnées</b> qui permettent aux fournisseurs d’être injectés comme dépendances dans
+    votre
+    classe.</p>
+  <p>L’<b> injection des dépendances</b> vous permet de garder vos classes de components légères et efficaces. Elles ne
+    vont pas
+    chercher les données sur le serveur, ne valident pas les inputs des utilisateurs ou ne se connectent pas directement
+    à la console. À la place, elles délèguent ces tâches aux services.</p>
+</div>

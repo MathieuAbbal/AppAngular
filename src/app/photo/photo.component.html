@@ -1,15 +1,18 @@
-<div class="search">
-  <input type="text" [(ngModel)]="search" placeholder="recherche...">
-  <input type="number" class="number" [(ngModel)]="per_page">
-  <button (click)="searchPhotos()" class="btn">Rechercher</button>
-</div>
+<div class="baniere">
+  <div class="search">
+    <input class="input" type="text" [(ngModel)]="search" placeholder="recherchez des photos gratuites...">
+    <input type="number" class="number" [(ngModel)]="per_page">
+    <button (click)="searchPhotos()" class="btn">Rechercher</button>
 
+  </div>
+</div>
 <div class="container">
   <div *ngFor="let item of data" class="card">
-    <img src="{{ item.src.medium }}">
+    <img src="{{ item.src.large }}">
 
     <p class="name">Photographe : {{item.photographer }}</p>
 
 
   </div>
 </div>
+<app-message *ngIf="loading"></app-message>
