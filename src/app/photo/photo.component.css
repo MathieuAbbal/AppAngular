@@ -65,7 +65,9 @@
   align-items: center;
   margin: 20px;
   padding: 10px;
+
 }
+
 
 img {
   height: 379px;
@@ -80,6 +82,12 @@ img {
 .card {
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: all 0.3s ease 0s;
+
+
+}
+.card:hover{
+  transform: translateY(-7px);
 }
 .name {
   text-align: center;
@@ -87,7 +95,6 @@ img {
 .btn {
   width: 140px;
   height: 45px;
-  font-family: "Roboto", sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -108,7 +115,10 @@ img {
   color: #fff;
   transform: translateY(-7px);
 }
-
+h1 {
+  text-align: center;
+  color: #232a34;
+}
 .baniere {
   height: 300px;
   overflow: hidden;
@@ -117,4 +127,25 @@ img {
   background-size: cover;
   display:flex;
   flex-direction:column;
+}
+a{
+  text-decoration:none;
+  color:#232a34;
+  border: 1px solid #232a34;
+  margin: 5px;
+  padding:5px;
+  font-size:0.6em;
+  border-radius:16px;
+
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+  background:#232a34 ;
+}
+.lien{
+  display:flex;
+  margin-left:240px;
+
+
 }

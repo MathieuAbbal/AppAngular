@@ -1,6 +1,6 @@
 .header{
   display:flex;
-
+  justify-content:flex-end;
   color:white;
   background-color: #232a34;
   padding:20px;

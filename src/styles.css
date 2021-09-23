@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 body {
   margin:0px;
   padding:0px;
+
  }
-body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { font-family: 'Sora', Roboto, "Helvetica Neue", sans-serif; }
 
