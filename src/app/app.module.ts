@@ -31,7 +31,8 @@ import { MessageComponent } from './message/message.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+
 
   ],
   providers: [HttpClientModule],
