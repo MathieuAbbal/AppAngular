@@ -2,7 +2,9 @@
   <div class="search">
     <input class="input" type="text" [(ngModel)]="search" placeholder="recherchez des photos gratuites...">
     <input type="number" class="number" [(ngModel)]="per_page">
-    <button (click)="searchPhotos()" class="btn">Rechercher</button>
+    <div (click)="searchPhotos()" class="btn">
+      <p class="text">Rechercher</p>
+    </div>
 
   </div>
 </div>
@@ -16,4 +18,4 @@
   </div>
 
 </div>
-<!--<app-message *ngIf="search===''"></app-message>-->
+<app-message *ngIf="loading"></app-message>

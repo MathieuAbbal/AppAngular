@@ -93,9 +93,9 @@ img {
   text-align: center;
 }
 .btn {
-  width: 140px;
-  height: 45px;
-  font-size: 11px;
+  width: 160px;
+  display:flex;
+  align-items:center;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -148,4 +148,8 @@ a:hover, a:focus, a:active {
   margin-left:240px;
 
 
+}
+.text{
+  padding:5px;
+  margin:0;
 }
