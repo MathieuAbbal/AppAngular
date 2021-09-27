@@ -1,10 +1,14 @@
 <div class="baniere">
-  <div class="search">
-    <input class="input" type="text" [(ngModel)]="search" placeholder="recherchez des photos gratuites...">
-    <input type="number" class="number" [(ngModel)]="per_page">
-    <button (click)="searchPhotos()" type="button" class="btn">Rechercher</button>
-
-  </div>
+  <form>
+    <div class="search">
+      <label for="search"></label>
+      <input class="input" type="text" name="search" [(ngModel)]="search"
+        placeholder="recherchez des photos gratuites...">
+      <label for="number"></label>
+      <input name="number" type="number" class="number" [(ngModel)]="per_page">
+      <button (click)="searchPhotos()" type="submit" class="btn">Rechercher</button>
+    </div>
+  </form>
 </div>
 <div class="container">
   <div *ngFor="let item of data" class="card">
