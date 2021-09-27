@@ -1,12 +1,12 @@
 <div class="baniere">
-  <form>
+  <form (ngSubmit)="searchPhotos()">
     <div class="search">
       <label for="search"></label>
       <input class="input" type="text" name="search" [(ngModel)]="search"
         placeholder="recherchez des photos gratuites...">
       <label for="number"></label>
       <input name="number" type="number" class="number" [(ngModel)]="per_page">
-      <button (click)="searchPhotos()" type="submit" class="btn">Rechercher</button>
+      <button type="submit" class="btn">Rechercher</button>
     </div>
   </form>
 </div>
