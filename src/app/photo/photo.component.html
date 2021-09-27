@@ -2,9 +2,7 @@
   <div class="search">
     <input class="input" type="text" [(ngModel)]="search" placeholder="recherchez des photos gratuites...">
     <input type="number" class="number" [(ngModel)]="per_page">
-    <div (click)="searchPhotos()" class="btn">
-      <p class="text">Rechercher</p>
-    </div>
+    <button (click)="searchPhotos()" type="button" class="btn">Rechercher</button>
 
   </div>
 </div>
