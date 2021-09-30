@@ -5,6 +5,8 @@ import { catchError } from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({
+    'Accept': 'text/plain',
+    'Content-Type': 'text/plain',
     'Access-Control-Allow-Headers': '*',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods':
@@ -24,7 +26,7 @@ export class PexelPhotoService {
     console.log(search);
     console.log(per_page);
 
-    const uri ='/search?query='+search+'&per_page='+per_page;
+    const uri ='/photo/search?query='+search+'&per_page='+per_page;
 
     return this.http
               .get<any>(uri, httpOptions)
