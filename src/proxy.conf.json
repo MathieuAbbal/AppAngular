@@ -1,5 +1,5 @@
 {
-  "http://localhost:4200": {
+  "https://monappangular.mat-dev.fr": {
     "target": "https://api.pexels.com/v1/",
     "secure": true,
     "changeOrigin": true,
