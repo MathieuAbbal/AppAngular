@@ -12,7 +12,7 @@ const httpOptions = {
       'GET, PUT, POST, DELETE, HEAD, OPTIONS, PATCH, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK',
     'Access-Control-Expose-Headers': ' *',
     Authorization: '563492ad6f91700001000001acabc9f13a564f05a35627896b1a1bfd',
-  }),
+  }),responseType: 'text' as 'json'
 };
 
 @Injectable({
