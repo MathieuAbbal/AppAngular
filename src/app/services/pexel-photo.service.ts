@@ -5,14 +5,14 @@ import { catchError } from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json',
+
     'Access-Control-Allow-Headers': '*',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods':
       'GET, PUT, POST, DELETE, HEAD, OPTIONS, PATCH, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK',
     'Access-Control-Expose-Headers': ' *',
     Authorization: '563492ad6f91700001000001acabc9f13a564f05a35627896b1a1bfd',
-  }),responseType: 'text' as 'json'
+  }),
 };
 
 @Injectable({
