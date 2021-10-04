@@ -5,8 +5,7 @@ import { catchError } from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Accept': 'text/plain',
-    'Content-Type': 'text/plain',
+    'Content-Type': 'application/json',
     'Access-Control-Allow-Headers': '*',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods':
