@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { MessageComponent } from './message/message.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { MessageComponent } from './message/message.component';
     PhotoComponent,
     HeaderComponent,
     MessageComponent,
+    MapComponent,
 
 
 
